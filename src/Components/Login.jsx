@@ -38,7 +38,7 @@ export default function Login() {
             // setErrorMsg(''),
             setTimeout(()=>{
                 setSuccessMsg('');
-                navigate('/');
+                navigate('/home');
             
             },2000)
             .catch((error)=>{setErrorMsg(error.message)})
