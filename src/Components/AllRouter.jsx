@@ -14,7 +14,7 @@ import UserProfile from "./UserProfile";
 export const allRouters=[
     {
         path:"/",
-        element:<Login/>
+        element: <Home/>
     },
     {
         path:"/home",
