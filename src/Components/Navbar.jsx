@@ -152,12 +152,15 @@ export default function Navbar() {
           
         
       </div>
-      <div className={style.producttypes}>
-            <Link to="/product-type/mobiles"><button className={style.buttonl}>Mobiles</button></Link>
-            <Link to="/product-type/laptops"><button className={style.buttonl}>Laptops</button></Link>
-            <Link to="/product-type/cameras"><button className={style.buttonl}>Cameras</button></Link>
-            <Link to="/product-type/shoes"><button className={style.buttonl}>Shoes</button></Link>
-      </div>
+      {
+        loggeduser &&   <div className={style.producttypes}>
+        <Link to="/product-type/mobiles"><button className={style.buttonl}>Mobiles</button></Link>
+        <Link to="/product-type/laptops"><button className={style.buttonl}>Laptops</button></Link>
+        <Link to="/product-type/cameras"><button className={style.buttonl}>Cameras</button></Link>
+        <Link to="/product-type/shoes"><button className={style.buttonl}>Shoes</button></Link>
+  </div>
+      }
+    
     </div>
 </>
   )

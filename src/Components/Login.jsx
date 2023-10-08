@@ -82,7 +82,7 @@ export default function Login() {
                     <button onClick={handleLogin} className={style.button}>Login</button>
                     <div>
                         <span>Dont have an Account?</span>
-                        <Link to='/signin'></Link>
+                        <Link to='/signin'>Register</Link>
                     </div>
             </form>
         </div>

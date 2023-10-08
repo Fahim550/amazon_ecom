@@ -112,7 +112,7 @@ export default function SignIn() {
                     </textarea>
                     <button type='submit' className={style.button}>Sign Up</button>
                     <div>
-                        <span>Alredy have an Account</span>
+                        <span>Alredy have an Account?</span>
                         <Link to='/login'>Sign IN</Link>
                     </div>
             </form>
