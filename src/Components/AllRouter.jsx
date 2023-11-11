@@ -7,14 +7,14 @@ import PgFoF from "./PgFoF";
 import AllProducts from "./Product-Components/AllProducts";
 import Specificproductpage from "./Product-Components/Specificproductpage";
 import Products from "./Products";
-import SignIn from "./SignIn";
+import SignIn from "./SignUp";
 import UserProfile from "./UserProfile";
 
 
 export const allRouters=[
     {
         path:"/",
-        element: <Login/>
+        element: <Home/>
     },
     {
         path:"/home",

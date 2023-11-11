@@ -124,7 +124,7 @@ export default function Specificproductpage() {
           <div className={style.price}>
                 <div className={style.mrp}>TAKA: <p className={style.frate}>{mrp}</p> </div>
                 <div className={style.seleprice}>Discount Price: <p className={style.rate}>{seleprice}</p> </div>
-                <p className={style.save}>Discount Price: {mrp-seleprice}</p>
+                <p className={style.save}>Discount: {mrp-seleprice}</p>
             </div>
 
             <p className={style.deatailshead}>Details</p>
@@ -179,9 +179,10 @@ export default function Specificproductpage() {
               Loading...
       </div>
     }
+    <div className='m-5'>
     <p className={style.deatailshead2}>Similar Items</p>
     <ProductSlide type={type}></ProductSlide>
-  
+    </div>
  
     </>
   )

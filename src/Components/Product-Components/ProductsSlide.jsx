@@ -49,7 +49,7 @@ export default function ProductsSlide(Props) {
       }
     };
   return (
-    <div>
+    <div >
       
 
       <Carousel responsive={responsive}>

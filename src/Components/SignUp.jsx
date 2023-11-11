@@ -7,8 +7,8 @@ import { auth, db } from '../auth/auth.config';
 
 
 const style={
-    container:`flex justify-center p-24`,
-    form:`flex flex-col p-2 rounded-xl border-[1px] border-solid border-slate-200  w-[350px]`,
+    container:`flex justify-center p-24 `,
+    form:`flex flex-col p-2 rounded-xl border-[1px] border-solid border-slate-200  w-[350px] shadow-2xl`,
     head:`text-2xl`,
     label:`mt-4 font-bold text-base text-2xl`,
     input:`my-px rounded-md p-1 border-2 border-solid border-gray-400 text-2xl focus:outline-[2px]`,

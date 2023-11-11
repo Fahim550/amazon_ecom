@@ -13,7 +13,7 @@ const style={
   frate:`flex m-0  text-red-500 line-through`,
   rate:`text-lime-500 ml-1.5 border-1 border-solid`,
   buycart:`flex mt-2 ml-1.5 justify-left`,
-  btn:`bg-slate-100 text-yellow-400 border-2 border-solid border-yellow-400 p-1.5 rounded-lg mr-2.5 hover:bg-black `,
+  btn:`bg-slate-100 text-yellow-400 border-2 border-solid border-yellow-400 p-1.5 rounded-lg mr-2.5 hover:bg-black`,
 }
 export default function ProductContainer(product) {
   let p=product.product
@@ -26,7 +26,6 @@ export default function ProductContainer(product) {
     console.log("products products",product.product)
   return (
     <div className={style.productcontainer}>
-      {/* <p>{product.productTitle}</p>; */}
        <img src={p.productImage} className={style.img} />
        <div className={style.details}>
             <a href={`/product/${p.productType}/${p.id}`}>
@@ -34,12 +33,10 @@ export default function ProductContainer(product) {
             <div className={style.price}>
                 <div className={style.mrp}>TAKA: <p className={style.frate}>{mrp}</p> </div>
                 <div className={style.seleprice}>Discount Price: <p className={style.rate}>{seleprice}</p> </div>
-                <p className={style.save}>Discount Price: {mrp-seleprice}</p>
+                <p className={style.save}>Discount: {mrp-seleprice}</p>
             </div> 
             <a href={`/product/${p.productType}/${p.id}`} className={style.buycart}>
                 <button className={style.btn}>More Details</button>
-                {/* <button className={style.btn}>Add to cart</button> */}
-
             </a>
        </div>
         </div>

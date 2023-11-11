@@ -5,6 +5,7 @@ import { useEffect } from "react"
 import { collection, getDocs, query, where } from "firebase/firestore"
 import { auth, db } from "../auth/auth.config"
 import ProductsSlide from "./Product-Components/ProductsSlide"
+import Login from "./Login"
 
 const style={
   head:`flex justify-center mt-5 `,
@@ -37,17 +38,19 @@ export default function Home() {
   const loggeduser=GetCurrentUser();
   if (loggeduser){
     console.log(loggeduser[0].email)
+
   }
   return (
     <div>
-        <Navbar/>
-        <Banner/>
+      <Navbar/>
+      <div className="w-[1150px]  mx-auto">
+         <Banner/>
         <div className={style.head}><p className={style.para}>Limited Time Deals</p></div>
         <ProductsSlide type={'Mobile'}/>
         <ProductsSlide type={'Camera'}/>
         <ProductsSlide type={'Laptop'}/>
         <ProductsSlide type={'Shoes'}/>
-        
+        </div>
     </div>
   )
 }

@@ -23,46 +23,17 @@ export default function AllProducts(Props) {
       let productdArray=[];
       querySnapshot.forEach((doc) => {
         productdArray.push({...doc.data(),id:doc.id})
-        // console.log(doc.id,"=>",doc.data());
       });
       setProducts(productdArray)
       
           })
           
-          // .catch((error)=>{
-          //   console.error(error.message)
-          // })
           return ()=>unsubscribe();
         // }
         // getproducts()
     },[path])
     console.log("product",products)
-    //  getDoc(collection(db,path)).then((querySnapshot)=>{
-    //   let productdArray=[];
-    //     querySnapshot.forEach((doc) => {
-    //       productdArray.push({...doc.data(),id:doc.id})
-    //       console.log(doc.id,"=>",doc.data());
-    //     });
-    //     setProducts(productdArray)
-    //   })
-    //   .catch((error)=>{
-    //     console.error(error.message)
-    //   })
-    // // const getproducts=()=>{
-      
-    // }
-    // return()=> getproducts()
-    // useEffect(()=>{
-    //   const q = query(collection(db, "todos"));
-    //   const unsubscribe = onSnapshot(q, (querySnapshot) => {
-    //     let todosArr = [];
-    //     querySnapshot.forEach((doc) => {
-    //       todosArr.push({...doc.data(),id: doc.id});
-    //     });
-    //     setTodos(todosArr)
-    //   });
-    //   return ()=>unsubscribe();
-    // },[])
+    
       
   
   return (

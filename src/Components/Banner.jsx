@@ -7,7 +7,7 @@ export default function Banner() {
  
   return (
   <>
-   <div id="carouselExampleCaptions" className="carousel slide">
+   <div id="carouselExampleCaptions" className="carousel slide mt-2">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -15,21 +15,21 @@ export default function Banner() {
   </div>
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={img2} className="d-block w-100 h-72" alt="..."/>
+      <img src={img2} className="d-block w-100 h-72 rounded-lg" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h3> BUY Gadget</h3>
         <p>Up to 60% off on all gadgets</p>
       </div>
     </div>
     <div className="carousel-item">
-      <img src={img3} className="d-block w-100 h-72" alt="..."/>
+      <img src={img3} className="d-block w-100 h-72 rounded-lg" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h3>BUY Apple Products</h3>
         <p>Up to 60% off on all gadgets</p>
       </div>
     </div>
     <div className="carousel-item">
-      <img src={img1} className="d-block w-100 h-72" alt="..."/>
+      <img src={img1} className="d-block w-100 h-72 rounded-lg" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
         <h3>BUY Gadget</h3>
         <p>Up to 60% off on all gadgets</p>

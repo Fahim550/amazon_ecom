@@ -118,7 +118,7 @@ export default function Navbar() {
 
           <div className={style.right}>
               {
-                  !loggeduser&& <nav className={style.nav}>
+                  !loggeduser && <nav className={style.nav}>
                       <Link to='/'><button  className={style.button}>Home</button></Link>
                       <Link to='/signin'><button className={style.button}>Register</button></Link>
                       <Link to='/login'><button className={style.button}>Login</button></Link>
@@ -133,7 +133,7 @@ export default function Navbar() {
                   </nav>
               }
               {
-                  loggeduser&& <nav className={style.nav}>
+                  loggeduser && <nav className={style.nav}>
                       <Link to='/'><button  className={style.button}>Home</button></Link>
                       <Link to='/sellproducts'><button  className={style.button}>Sell</button></Link>
                       <div className={style.cart}>
